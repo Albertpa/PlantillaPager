@@ -131,12 +131,12 @@ public class MainActivity extends FragmentActivity {
 		    
 	
 		     //para que si gira, mantenga el tab activo
-		     /*
+		     
 		     if (savedInstanceState != null) {
 		         mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
 		         Log.e("Rodalies","saved tag1"+savedInstanceState.getString("tab"));
 		     }
-		     */
+		     
 		     
 		
 		}
@@ -144,18 +144,20 @@ public class MainActivity extends FragmentActivity {
 		
 
 	}
-	 /*
+	 
 	 @Override
 	 protected void onSaveInstanceState(Bundle outState) {
 		 //if(existPreferences){
 		    Log.e("Rodalies","saved tag2"+mTabHost.getCurrentTabTag());
 	        super.onSaveInstanceState(outState);
 	        Log.e("Rodalies","saved tag3"+mTabHost.getCurrentTabTag());
+	        
+	        
 	        outState.putString("tab", mTabHost.getCurrentTabTag());
 	        
 		 //}
 	 }
-    */
+    
     
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
