@@ -23,7 +23,7 @@ import android.widget.TabWidget;
 
 public class MainActivity extends FragmentActivity {
 
-	private static final String[] fragmentTags = { "Page1", "Page2" };	
+	//private static final String[] fragmentTags = { "Page1", "Page2" };	
 	private ArrayAdapter<String> adapt;
 	
 	
@@ -50,10 +50,11 @@ public class MainActivity extends FragmentActivity {
 			startActivity(new Intent(MainActivity.this, GuardarPreferencias.class));  
 			
 		}else{
-		
+			String[] fragmentTags = { "Page1", "Page2" };
 			Log.e("Rodalies", "te sharedpreferences");
 			existPreferences=true;
 	
+			//nombres de los tabs
 			 String[] items_menu = {
 				 	    getResources().getString(R.string.menu_page1),
 		                getResources().getString(R.string.menu_page2)
@@ -122,6 +123,8 @@ public class MainActivity extends FragmentActivity {
 		     //Se le indica la clase en cada posicion del array, es decir para cada posicion tiene un texto ya
 		     //pero necesita indicar la clase correspondiente
 		     
+		    //bucle for de la pagina
+		    //for()
 		     mTabsAdapter.addTab(mTabHost.newTabSpec(fragmentTags[0]).setIndicator(items_menu[0]),
 		     		Page1Activity.class, args);
 		     
@@ -131,12 +134,12 @@ public class MainActivity extends FragmentActivity {
 		    
 	
 		     //para que si gira, mantenga el tab activo
-		     
+		     /*
 		     if (savedInstanceState != null) {
 		         mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));
 		         Log.e("Rodalies","saved tag1"+savedInstanceState.getString("tab"));
 		     }
-		     
+		     */
 		     
 		
 		}
@@ -144,7 +147,7 @@ public class MainActivity extends FragmentActivity {
 		
 
 	}
-	 
+	 /*
 	 @Override
 	 protected void onSaveInstanceState(Bundle outState) {
 		 //if(existPreferences){
@@ -157,7 +160,7 @@ public class MainActivity extends FragmentActivity {
 	        
 		 //}
 	 }
-    
+    */
     
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

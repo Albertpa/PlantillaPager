@@ -25,4 +25,5 @@ public class Constants {
    public static final String LINEA_SECUNDARIA16 = "LINEA_SECUNDARIA16"; // String
    public static final String LINEA_SECUNDARIA17 = "LINEA_SECUNDARIA17"; // String
    public static final String LINEA_SECUNDARIA18 = "LINEA_SECUNDARIA18"; // String
+   public static final String LINEAS_TOTAL = "LINEAS_TOTAL"; // String
 }

@@ -205,6 +205,7 @@ public class GuardarPreferencias extends Activity {
              
          }
        Log.e("Rodalies", "seleccionat Secundari->"+secundarioSelected);
+       editor.putInt(Constants.LINEAS_TOTAL, contador); 
        editor.commit();
        
         
